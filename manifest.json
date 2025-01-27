@@ -1,0 +1,21 @@
+{
+    "short_name": "¡¡Vamos Concordia!!",
+    "name": "Cita Biblica Random",
+    "start_url":"./",
+    "icons":[
+        {"src":"./edi-icon-md.svg","sizes":"144x144"}
+    ],
+    "background_color": "#7300ff",
+    "display":"standalone",
+    "scope":"/",
+    "theme_color": "#ffffff",
+    "description":"Esta es una aplicacion que genera una cita biblica aleatoria",
+    "orientation":"portrait-primary",
+    "lang":"es-Es",
+    "dir":"ltr",
+    "serviceworker":{
+        "src":"sw.js",
+        "scope":"/",
+        "update_via_cache":"none"
+    }
+}

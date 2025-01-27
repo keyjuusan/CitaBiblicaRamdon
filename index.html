@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./edi-icon-md.svg" type="image/x-icon" />
+    <link rel="manifest" href="./manifest.json" />
+    meta
+    <title>Genera una cita biblica</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        height: 100dvh;
+        width: 100dvw;
+    }
+
+    body {
+        height: 100%;
+        display: grid;
+        place-content: center;
+        background: no-repeat linear-gradient(158deg, #0e0024 0%, #3a0979 35%, #7300ff 100%);
+    }
+
+    body .box {
+        display: grid;
+        place-items: center;
+        color: #fff;
+        width: 300px;
+        height: 600px;
+        background: #fdfded18;
+        border-radius: 8px;
+        box-shadow: 0 4px 30px #00000031;
+        /* backdrop-filter: blur(6.2px); */
+        /* -webkit-backdrop-filter: blur(6.2px); */
+        border: 1px solid #ffffe146;
+    }
+    body div div{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        background: none;
+        padding: 8px;
+        background-color: none;
+    }
+
+    body div p{
+        font-size: 24px;
+    }
+
+    /* From Uiverse.io by Voxybuns */ 
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+ appearance: button;
+ background-color: #dbcfe7;
+ border: solid transparent;
+ border-radius: 16px;
+ border-width: 0 0 4px;
+ box-sizing: border-box;
+ color: #000;
+ cursor: pointer;
+ display: inline-block;
+ font-size: 15px;
+ font-weight: 700;
+ letter-spacing: .8px;
+ line-height: 20px;
+ margin: 0;
+ outline: none;
+ overflow: visible;
+ padding: 13px 19px;
+ text-align: center;
+ text-transform: uppercase;
+ touch-action: manipulation;
+ transform: translateZ(0);
+ transition: filter .2s;
+ user-select: none;
+ -webkit-user-select: none;
+ vertical-align: middle;
+ white-space: nowrap;
+}
+
+button:after {
+ background-clip: padding-box;
+ background-color: #f2e5ff;
+ border: solid transparent;
+ border-radius: 16px;
+ border-width: 0 0 4px;
+ bottom: -4px;
+ content: "";
+ left: 0;
+ position: absolute;
+ right: 0;
+ top: 0;
+ z-index: -1;
+}
+
+button:main, button:focus {
+ user-select: auto;
+}
+
+
+button:disabled {
+ cursor: auto;
+}
+
+button:active:after {
+ border-width: 0 0 0px;
+}
+
+button:active {
+ padding-bottom: 10px;
+}
+
+</style>
+
+<body>
+    <div class="box">
+        <div>
+            <p id="citaBiblica">Genesis 1:1</p>
+            <button id="btnRoll">Generar</button>
+        </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
