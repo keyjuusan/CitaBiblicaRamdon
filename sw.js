@@ -9,8 +9,8 @@ self.addEventListener("install", (e) => {
           "./index.js",
           "./manifest.json",
           "./edi-icon-md.svg",
-          "./edi-icon.svg"
-          
+          "./edi-icon.svg",
+          "./sound/silbato_corto.mp3"
         ]);
       })
       .catch((err) => {
