@@ -10,7 +10,7 @@ self.addEventListener("install", (e) => {
           "./manifest.json",
           "./edi-icon-md.svg",
           "./edi-icon.svg",
-          "./sound/silbato_corto.mp3"
+          "sound/silbato_corto.mp3"
         ]);
       })
       .catch((err) => {
